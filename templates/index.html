@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dojo Survey</title> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row bg-dark text-white text-center">
+                <div class='col'></div>
+                <div class='col'>
+                    <h1>Dojo Survey</h2>
+                    <h3>We are the best</h5>
+                </div>
+                <div class='col'></div>
+            </div>
+            <div class="row">
+                <div class="col bg-info"></div>
+                <div class="col-10 px-5 bg-light">
+                    <br>
+                    <!-- the Form -->
+                    <form action='/process' method='POST' class="form-group">
+                        <h6 class='text-muted text-secondary'> Student Name: </h6>
+                        <input type='text' name='student_name' value='Name'>
+                        <br><br>
+
+                        <h6 class='text-muted text-secondary'>Dojo Location:</h6>
+                        <select name='dojo_location'>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Washington D.C.">Washington D.C.</option>
+                            <option value="San Francisco">San Francisco</option>
+                            <option value="Houston">Houston</option>
+                            <option value="Atlanta">Atlanta</option>
+                            <option value="Nantucket">Nantucket</option> 
+                        </select>
+                        <br><br>
+
+                        <h6 class='text-muted text-secondary'>Favorite Languages: </h6>
+                            <input type="checkbox" name="fave_language" value="JavaScript" checked> JavaScript, Language of the Web<br>
+                            <input type="checkbox" name="fave_language" value="C++"> C++, Just Another Language<br>
+                            <input type="checkbox" name="fave_language" value="Python"> Python, The Lazy Language<br>
+                            <input type="checkbox" name="fave_language" value="HTML"> HTML, Static<br>
+                            <input type="checkbox" name="fave_language" value="CSS"> CSS is Life.<br>
+                            <input type="checkbox" name="fave_language" value="Ruby"> Ruby<br>
+                            <input type="checkbox" name="fave_language" value="Spoken Language"> Spoken Language<br>
+                            <input type="checkbox" name="fave_language" value="Binary"> Binary
+
+                        <br><br>
+                        <h6 class='text-muted text-secondary'>Comment: </h6>
+                        <textarea name="comment" rows="5" cols="45">Leave a comment!</textarea>
+                        <br>
+                        <br>
+                        <h6 class='text-muted text-secondary'>Will You Join Us?</h6>
+                        <input type="radio" name="the_decision" id ="option1" value="Maybe" checked> Let me think about it (so probably not).<br>
+                        <input type="radio" name="the_decision" id ="option2" value="Yes"> Yes, now!<br>
+                        <input type="radio" name="the_decision" id ="option3" value="No"> Not, I'm not worthy!<br>
+                        <br>
+                        <input class="btn btn-primary" type='submit'>
+                    </form>
+                </div>
+                <div class="col bg-info"></div>
+            </div>
+            <div class="row bg-dark text-white">
+                <div class='col'></div>
+                <div class='col text-center p-3'>
+                    <h4>Thanks!</h4>
+                </div>
+                <div class='col'></div>
+            </div>
+        </div>
+</body>
+</html>

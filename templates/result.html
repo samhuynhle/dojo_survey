@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Results</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container">
+                <div class="row bg-dark text-white text-center">
+                    <div class='col'></div>
+                    <div class='col-8 p-3'>
+                        <h1>Submitted Information</h2>
+                    </div>
+                    <div class='col'></div>
+                </div>
+            <div class="row">
+                <div class="col-sm bg-info"></div>
+                <div class="col-10">
+
+                    <table class="table" style="width:100%">
+                        <tr>
+                            <td>Name:</td>
+                            <td></td> 
+                            <td>{{student_name_on_template}}</td>
+                        </tr>
+                        <tr>
+                            <td>Dojo Location:</td>
+                            <td></td> 
+                            <td>{{location_on_template}}</td>
+                        </tr>
+                        <tr>
+                            <td>Favorite Languages:</td>
+                            <td></td> 
+                            <td>{{fave_language_on_template}}</td>
+                        </tr>
+                        <tr>
+                            <td>Comment:</td>
+                            <td></td> 
+                            <td>{{comment_on_template}}</td>
+                        </tr>
+                        <tr>
+                            <td>The Decision:</td>
+                            <td></td> 
+                            <td>{{decision_on_tamplate}}</td>
+                        </tr>
+                    </table>
+
+                    <form action='/'>
+                        <input type='submit' value="Go Back" class="btn btn-primary" >
+                    </form>
+                    <br>
+                </div>
+                <div class="col-sm bg-info"></div>
+            </div>
+            <div class="row bg-dark text-white text-center">
+                <div class='col'></div>
+                <div class='col-8'>
+                    <h4 class='p-3'> Thank You! </h4>
+                </div>
+                <div class='col'></div>
+            </div>
+        </div>
+    </body>
+</html>
